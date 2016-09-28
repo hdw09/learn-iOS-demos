@@ -1,0 +1,28 @@
+{
+  "name": "mainTests",
+  "version": "0.0.1",
+  "license": "MIT",
+  "summary": "David 主要测试库",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "homepage": "http://git.sankuai.com/users/huangdawei/repos/network/browse",
+  "authors": {
+    "huangdawei": "huangdawei@meituan.com"
+  },
+  "source": {
+    "git": "ssh://git@git.sankuai.com/~huangdawei/network.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "mainTests/Classes/**/*",
+  "resource_bundles": {
+    "mainTestsBundle": [
+      "mainTests/Resources/**/*.{xib,storyboard,plist,json,jpg,png}"
+    ]
+  },
+  "prefix_header_contents": [
+    "#ifdef __OBJC__",
+    "#import <MainTestMacro.h>",
+    "#endif"
+  ]
+}

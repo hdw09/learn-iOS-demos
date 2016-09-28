@@ -1,0 +1,17 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.0'
+use_frameworks!
+
+target 'mainProject' do
+
+  pod 'Mantle', '~> 2.0.7'
+  
+  pod 'Toast', '~> 3.0'
+
+  pod 'Masonry', '1.0.2'
+
+  pod 'ReactiveCocoa','4.1.0' 
+
+  pod 'mainTests', :path => '../myPods/'
+
+end

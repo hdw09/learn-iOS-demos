@@ -1,0 +1,40 @@
+PODS:
+  - mainTests (0.0.1)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - Masonry (1.0.2)
+  - ReactiveCocoa (4.1.0):
+    - ReactiveCocoa/UI (= 4.1.0)
+    - Result (~> 2.0)
+  - ReactiveCocoa/Core (4.1.0):
+    - ReactiveCocoa/no-arc
+    - Result (~> 2.0)
+  - ReactiveCocoa/no-arc (4.1.0):
+    - Result (~> 2.0)
+  - ReactiveCocoa/UI (4.1.0):
+    - ReactiveCocoa/Core
+    - Result (~> 2.0)
+  - Result (2.1.3)
+  - Toast (3.0)
+
+DEPENDENCIES:
+  - mainTests (from `../myPods/`)
+  - Mantle (~> 2.0.7)
+  - Masonry (= 1.0.2)
+  - ReactiveCocoa (= 4.1.0)
+  - Toast (~> 3.0)
+
+EXTERNAL SOURCES:
+  mainTests:
+    :path: "../myPods/"
+
+SPEC CHECKSUMS:
+  mainTests: 9a4d77763a78b038376d00df7e11bcd71ebd3c2b
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
+  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+  Toast: 32c59229abfcf41850162b83bb9259dc84372473
+
+COCOAPODS: 0.39.0

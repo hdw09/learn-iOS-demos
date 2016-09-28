@@ -1,0 +1,1 @@
+../../../../../myPods/mainTests/Classes/Components/UINavigationBar+Awesome.h
