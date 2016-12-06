@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThereDTouchPage : UIViewController
+@interface ThereDTouchPage : BaseViewController
 
 @end

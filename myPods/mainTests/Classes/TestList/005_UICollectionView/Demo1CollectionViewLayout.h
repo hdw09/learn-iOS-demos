@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Demo1CollectionViewLayout : UICollectionViewLayout
+@interface Demo1CollectionViewLayout : UICollectionViewFlowLayout
 
 @end

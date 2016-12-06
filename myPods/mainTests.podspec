@@ -22,5 +22,6 @@ s.resource_bundles = {
 }
 
 s.prefix_header_contents = '#ifdef __OBJC__', '#import <MainTestMacro.h>', '#endif'
+s.dependency  'ReactiveCocoa','4.1.0'
 
 end

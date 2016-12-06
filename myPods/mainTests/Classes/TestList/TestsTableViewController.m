@@ -9,6 +9,11 @@
 #import "TestsTableViewController.h"
 #import "ScrollViewPage.h"
 #import "EmptyPage.h"
+#import "ThereDTouchPage.h"
+#import "SelfUIControlPage.h"
+#import "RACCommandViewPage.h"
+#import "FormControlPage.h"
+#import "UICollectionViewDemo1Page.h"
 
 @interface TestsTableViewController ()
 
@@ -30,10 +35,14 @@
 {
     _tableData = @[
                    @{@"2016-Q3":@[
-                             @{@"scroll view绘制过程":[ScrollViewPage class]}
+                             @{@"scroll view绘制过程":[ScrollViewPage class]},
+                             @{@"self UI控件":[SelfUIControlPage class]},
+                             @{@"3D Touch":[ThereDTouchPage class]}
                              ]},
                    @{@"2016-Q4":@[
-                             @{@"test":[EmptyPage class]},
+                             @{@"wifi信息":[RACCommandViewPage class]},
+                             @{@"form view":[FormControlPage class]},
+                             @{@"UICollectionView 1":[UICollectionViewDemo1Page class]},
                              @{@"test":[EmptyPage class]},
                              @{@"test":[EmptyPage class]},
                              @{@"test":[EmptyPage class]}

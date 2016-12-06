@@ -27,10 +27,10 @@
         
         UINavigationController *wnvc = [[UINavigationController alloc]initWithRootViewController:testsListpage];
         UINavigationController *cnvc = [[UINavigationController alloc]initWithRootViewController:myPage];
-        
+
         wnvc.tabBarItem.title = @"Demos";
         cnvc.tabBarItem.title = @"我";
-        
+
         wnvc.tabBarItem.image = [MainTestsBundleGeter getImage:@"testList.png"];
         cnvc.tabBarItem.image = [MainTestsBundleGeter getImage:@"me.png"];
 
@@ -41,4 +41,5 @@
     }
     return self;
 }
+
 @end

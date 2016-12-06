@@ -1,5 +1,5 @@
 //
-//  SelfUIControlPage.h
+//  FormControlPage.h
 //  Pods
 //
 //  Created by David on 16/9/30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelfUIControlPage : BaseViewController
+@interface FormControlPage : BaseViewController
 
 @end
