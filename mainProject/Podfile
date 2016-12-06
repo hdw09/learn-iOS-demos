@@ -5,13 +5,24 @@ use_frameworks!
 target 'mainProject' do
 
   pod 'Mantle', '~> 2.0.7'
-  
-  pod 'Toast', '~> 3.0'
 
   pod 'Masonry', '1.0.2'
 
   pod 'ReactiveCocoa','4.1.0' 
 
+  pod 'MMPopupView'
+
   pod 'mainTests', :path => '../myPods/'
 
 end
+
+target 'widgetT' do
+    
+    pod 'Masonry', '1.0.2'
+    
+    pod 'ReactiveCocoa','4.1.0'
+    
+end
+
+
+

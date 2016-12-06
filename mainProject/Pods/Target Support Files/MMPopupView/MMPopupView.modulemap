@@ -1,0 +1,6 @@
+framework module MMPopupView {
+  umbrella header "MMPopupView-umbrella.h"
+
+  export *
+  module * { export * }
+}

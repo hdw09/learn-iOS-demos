@@ -24,5 +24,10 @@
     "#ifdef __OBJC__",
     "#import <MainTestMacro.h>",
     "#endif"
-  ]
+  ],
+  "dependencies": {
+    "ReactiveCocoa": [
+      "4.1.0"
+    ]
+  }
 }

@@ -84,18 +84,18 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-mainProject/MMPopupView.framework"
   install_framework "Pods-mainProject/Mantle.framework"
   install_framework "Pods-mainProject/Masonry.framework"
   install_framework "Pods-mainProject/ReactiveCocoa.framework"
   install_framework "Pods-mainProject/Result.framework"
-  install_framework "Pods-mainProject/Toast.framework"
   install_framework "Pods-mainProject/mainTests.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-mainProject/MMPopupView.framework"
   install_framework "Pods-mainProject/Mantle.framework"
   install_framework "Pods-mainProject/Masonry.framework"
   install_framework "Pods-mainProject/ReactiveCocoa.framework"
   install_framework "Pods-mainProject/Result.framework"
-  install_framework "Pods-mainProject/Toast.framework"
   install_framework "Pods-mainProject/mainTests.framework"
 fi
