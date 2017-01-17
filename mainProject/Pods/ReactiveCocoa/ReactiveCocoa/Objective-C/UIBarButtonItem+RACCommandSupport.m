@@ -7,7 +7,7 @@
 //
 
 #import "UIBarButtonItem+RACCommandSupport.h"
-#import <ReactiveCocoa/EXTKeyPathCoding.h>
+#import <ReactiveCocoa/RACEXTKeyPathCoding.h>
 #import "RACCommand.h"
 #import "RACDisposable.h"
 #import "RACSignal+Operations.h"

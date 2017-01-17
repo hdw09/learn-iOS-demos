@@ -9,7 +9,7 @@
 #import "UICollectionViewDemo1Page.h"
 #import "Demo1CollectionViewLayout.h"
 
-@interface UICollectionViewDemo1Page ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface UICollectionViewDemo1Page ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextFieldDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *dataSourceArray;
@@ -19,6 +19,8 @@
 @property (nonatomic, strong) UIView *snapshotView;
 /**之前选中cell的NSIndexPath*/
 @property (nonatomic, strong) NSIndexPath *moveIndexPath;
+
+@property (nonatomic, strong) UITextField *textFiled;
 
 @end
 
@@ -41,6 +43,7 @@ static NSString *const footerReuseIdentifier = @"footerReuseIdentifier";
     [super viewDidLoad];
     self.dataSourceArray = [NSMutableArray arrayWithArray:@[@1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@17,@18,@19]];
     [self loadCollectionView];
+    [self.view addSubview:self.textFiled];
     UIBarButtonItem *btnItem = [[UIBarButtonItem alloc] initWithTitle:@"添加"
                                                                 style:UIBarButtonItemStylePlain
                                                                target:self
@@ -245,6 +248,7 @@ static NSString *const footerReuseIdentifier = @"footerReuseIdentifier";
 
 - (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath*)destinationIndexPath {
     [self p_exchangeDataSourceWithFromIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+    [[RACSignal empty] distinctUntilChanged];
 }
 
 - (void)p_exchangeDataSourceWithFromIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath*)destinationIndexPath
@@ -301,6 +305,15 @@ static NSString *const footerReuseIdentifier = @"footerReuseIdentifier";
     UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;
+}
+
+- (UITextField *)textFiled
+{
+    if (_textFiled == nil) {
+        _textFiled = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 300, 60)];
+        _textFiled.delegate = self;
+    }
+    return _textFiled;
 }
 
 //- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath

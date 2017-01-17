@@ -1,8 +1,11 @@
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#endif
 
-#import "EXTKeyPathCoding.h"
-#import "EXTScope.h"
-#import "metamacros.h"
+#import "RACEXTKeyPathCoding.h"
+#import "RACEXTScope.h"
+#import "RACmetamacros.h"
+#import "MKAnnotationView+RACSignalSupport.h"
 #import "NSArray+RACSequenceAdditions.h"
 #import "NSData+RACSupport.h"
 #import "NSDictionary+RACSequenceAdditions.h"
@@ -72,15 +75,12 @@
 #import "RACUnit.h"
 #import "RACValueTransformer.h"
 #import "ReactiveCocoa-Bridging-Header.h"
-#import "ReactiveCocoa.h"
-#import "MKAnnotationView+RACSignalSupport.h"
 #import "UIActionSheet+RACSignalSupport.h"
 #import "UIAlertView+RACSignalSupport.h"
 #import "UIBarButtonItem+RACCommandSupport.h"
 #import "UIButton+RACCommandSupport.h"
 #import "UICollectionReusableView+RACSignalSupport.h"
 #import "UIControl+RACSignalSupport.h"
-#import "UIControl+RACSignalSupportPrivate.h"
 #import "UIDatePicker+RACSignalSupport.h"
 #import "UIGestureRecognizer+RACSignalSupport.h"
 #import "UIImagePickerController+RACSignalSupport.h"
@@ -93,7 +93,7 @@
 #import "UITableViewHeaderFooterView+RACSignalSupport.h"
 #import "UITextField+RACSignalSupport.h"
 #import "UITextView+RACSignalSupport.h"
-#import "RACObjCRuntime.h"
+#import "ReactiveCocoa.h"
 
 FOUNDATION_EXPORT double ReactiveCocoaVersionNumber;
 FOUNDATION_EXPORT const unsigned char ReactiveCocoaVersionString[];

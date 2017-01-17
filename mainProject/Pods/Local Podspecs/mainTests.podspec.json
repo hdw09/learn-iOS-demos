@@ -27,7 +27,10 @@
   ],
   "dependencies": {
     "ReactiveCocoa": [
-      "4.1.0"
+
+    ],
+    "Masonry": [
+
     ]
   }
 }

@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+RACLifting.h"
-#import <ReactiveCocoa/EXTScope.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 #import "NSInvocation+RACTypeParsing.h"
 #import "NSObject+RACDeallocating.h"
 #import "NSObject+RACDescription.h"

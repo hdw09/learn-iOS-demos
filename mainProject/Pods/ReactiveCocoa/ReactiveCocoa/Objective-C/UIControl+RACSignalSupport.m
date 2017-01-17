@@ -7,7 +7,7 @@
 //
 
 #import "UIControl+RACSignalSupport.h"
-#import <ReactiveCocoa/EXTScope.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 #import "RACCompoundDisposable.h"
 #import "RACDisposable.h"
 #import "RACSignal.h"
@@ -25,12 +25,15 @@
 			@strongify(self);
 
 			[self addTarget:subscriber action:@selector(sendNext:) forControlEvents:controlEvents];
-			[self.rac_deallocDisposable addDisposable:[RACDisposable disposableWithBlock:^{
+
+			RACDisposable *disposable = [RACDisposable disposableWithBlock:^{
 				[subscriber sendCompleted];
-			}]];
+			}];
+			[self.rac_deallocDisposable addDisposable:disposable];
 
 			return [RACDisposable disposableWithBlock:^{
 				@strongify(self);
+				[self.rac_deallocDisposable removeDisposable:disposable];
 				[self removeTarget:subscriber action:@selector(sendNext:) forControlEvents:controlEvents];
 			}];
 		}]

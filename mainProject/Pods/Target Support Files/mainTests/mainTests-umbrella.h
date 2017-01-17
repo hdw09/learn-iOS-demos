@@ -1,4 +1,6 @@
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#endif
 
 #import "BaseViewController.h"
 #import "NSString+FontAwesome.h"
@@ -16,6 +18,9 @@
 #import "SelfUIControlPage.h"
 #import "ThereDTouchPage.h"
 #import "FormControlPage.h"
+#import "MTBCYFormInputView.h"
+#import "Demo1CollectionViewLayout.h"
+#import "UICollectionViewDemo1Page.h"
 #import "TestsTableViewController.h"
 
 FOUNDATION_EXPORT double mainTestsVersionNumber;
