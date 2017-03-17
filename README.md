@@ -1,5 +1,10 @@
 ## 程序背景
 
+
+[![Build Status](https://travis-ci.org/hdw09/learn-iOS-demos.svg?branch=master)](https://travis-ci.org/hdw09/learn-iOS-demos)
+
+
+
 最近觉得学习iOS书籍的时候又一些知识点要写程序验证一下，有利于理解和加深记忆。以前写demo要创建工程，导入第三方库等等，这些工作虽然简单但比较繁琐。还是写一个壳程序，里面导入了常用的第三方库，用tableview按季度分租，点击可以进入某个demo vc 。  这个程序可以很大程度上避免以前为了一个小小的知识验证而创建工程的麻烦，还是很有用的。
 
 ## 组织结构
