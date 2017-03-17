@@ -16,6 +16,7 @@ s.authors = { 'huangdawei' => 'huangdawei@meituan.com' }
 s.source = { :git => 'ssh://git@git.sankuai.com/~huangdawei/network.git', :tag => s.version.to_s }
 
 s.source_files = 'mainTests/Classes/**/*'
+s.frameworks = 'GLKit','OpenGLES'
 
 s.resource_bundles = {
    'mainTestsBundle' => ['mainTests/Resources/**/*.{xib,storyboard,plist,json,jpg,png}']

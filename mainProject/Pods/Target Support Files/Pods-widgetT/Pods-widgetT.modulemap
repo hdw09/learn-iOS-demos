@@ -1,6 +1,0 @@
-framework module Pods_widgetT {
-  umbrella header "Pods-widgetT-umbrella.h"
-
-  export *
-  module * { export * }
-}

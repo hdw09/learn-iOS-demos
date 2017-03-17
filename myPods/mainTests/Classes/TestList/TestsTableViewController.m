@@ -14,6 +14,7 @@
 #import "RACCommandViewPage.h"
 #import "FormControlPage.h"
 #import "UICollectionViewDemo1Page.h"
+#import "CameraViewController.h"
 
 @interface TestsTableViewController ()
 
@@ -42,9 +43,10 @@
                    @{@"2016-Q4":@[
                              @{@"wifi信息":[RACCommandViewPage class]},
                              @{@"form view":[FormControlPage class]},
-                             @{@"UICollectionView 1":[UICollectionViewDemo1Page class]},
-                             @{@"test":[EmptyPage class]},
-                             @{@"test":[EmptyPage class]},
+                             @{@"UICollectionView 1":[UICollectionViewDemo1Page class]}
+                             ]},
+                   @{@"2017-Q1":@[
+                             @{@"720图片采集相机":[CameraViewController class]},
                              @{@"test":[EmptyPage class]}
                              ]}
                    ];

@@ -1,0 +1,41 @@
+PODS:
+  - mainTests (0.0.1):
+    - Masonry
+    - ReactiveCocoa
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - Masonry (1.0.2)
+  - MMPopupView (1.7.2):
+    - Masonry
+  - OpenCV (3.1.0.1)
+  - ReactiveCocoa (4.2.2):
+    - Result (~> 2.0)
+  - Result (2.1.3)
+
+DEPENDENCIES:
+  - mainTests (from `./myPods/`)
+  - Mantle (~> 2.0.7)
+  - Masonry (= 1.0.2)
+  - MMPopupView
+  - OpenCV (= 3.1.0.1)
+  - ReactiveCocoa (from `https://gist.githubusercontent.com/andrewschreiber/4fd444c08e8c8e876f06bb3a8ae45f2e/raw/72798f6fd81a124b0eaac52c6484725fbe9f5330/ReactiveCocoa.podspec.json`)
+
+EXTERNAL SOURCES:
+  mainTests:
+    :path: "./myPods/"
+  ReactiveCocoa:
+    :podspec: https://gist.githubusercontent.com/andrewschreiber/4fd444c08e8c8e876f06bb3a8ae45f2e/raw/72798f6fd81a124b0eaac52c6484725fbe9f5330/ReactiveCocoa.podspec.json
+
+SPEC CHECKSUMS:
+  mainTests: c7fe9ef86839a8e9a4e0bbbc6e1ea149efe7ebef
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MMPopupView: fe1dd010824029dfb632fdf1a531db5dd5386020
+  OpenCV: 41c4250e2b06a394d6fbb634b5fa622cdd846018
+  ReactiveCocoa: b709fb270cb9631201dd072b04d095f4c5acd171
+  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+
+PODFILE CHECKSUM: 68db3561002cc79806ef1efb03a3d12eddfd3dbc
+
+COCOAPODS: 1.1.1

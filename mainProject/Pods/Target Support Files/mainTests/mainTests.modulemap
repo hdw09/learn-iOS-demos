@@ -1,6 +1,0 @@
-framework module mainTests {
-  umbrella header "mainTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
